@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+wsFrontend-Fabrica25.2
 
-## Getting Started
+Este repositório contém o código-fonte de um projeto desenvolvido como parte de um desafio técnico da Fábrica de Software. O projeto foi criado utilizando o framework Next.js, com suporte a TypeScript, visando a construção de interfaces modernas e eficientes.
 
-First, run the development server:
+🚀 Tecnologias Utilizadas
 
-```bash
+Next.js
+
+TypeScript
+
+React
+
+ESLint
+
+PostCSS
+
+📦 Instalação
+
+Clone este repositório em sua máquina local:
+
+git clone https://github.com/Theus2005-dev/wsFrontend-Fabrica25.2.git
+
+
+Navegue até o diretório do projeto:
+
+cd wsFrontend-Fabrica25.2
+
+
+Instale as dependências do projeto:
+
+npm install
+
+⚡ Rodando o Projeto
+
+Para iniciar o servidor de desenvolvimento, execute:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto estará disponível em http://localhost:3000
+.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧪 Estrutura do Projeto
 
-## Learn More
+A estrutura do projeto segue o padrão recomendado pelo Next.js:
 
-To learn more about Next.js, take a look at the following resources:
+app/: Contém os componentes e páginas principais da aplicação.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+public/: Arquivos estáticos como imagens e fontes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+src/: Código-fonte da aplicação.
 
-## Deploy on Vercel
+package.json: Gerenciador de dependências e scripts do projeto.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+tsconfig.json: Configurações do TypeScript.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+eslint.config.mjs: Configurações do ESLint.
+
+postcss.config.mjs: Configurações do PostCSS.
+
+next.config.ts: Configurações adicionais do Next.js.

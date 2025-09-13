@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { usePokemonType } from "../types/pokemonType";
+import { useGeralPokemonType } from "../types/pokemonType";
 
 export default function useGetPokemons() {
-  const [data, setData] = useState<usePokemonType[]>([]);
+  const [data, setData] = useState<useGeralPokemonType[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

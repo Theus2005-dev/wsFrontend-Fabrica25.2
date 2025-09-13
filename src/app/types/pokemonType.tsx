@@ -1,4 +1,4 @@
-export type usePokemonType ={
+export type useGeralPokemonType ={
     name: string,
     url: string,
     image: string,

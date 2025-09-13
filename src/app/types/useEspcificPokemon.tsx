@@ -7,3 +7,8 @@ export type EspecificPokemon ={
     baseExperience: number
 
 }
+export interface PokemonType {
+  type: {
+    name: string;
+  };
+}

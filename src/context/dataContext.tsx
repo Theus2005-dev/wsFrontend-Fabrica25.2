@@ -1,3 +1,4 @@
+'use client';
 import useGetPokemons from "@/app/hooks/useGetPokemon";
 import { useContext, useEffect, useState } from "react";
 import { createContext } from "react";
@@ -16,7 +17,7 @@ export default function DataProvider({ children }: ChildrenType) {
   useEffect(() => {
     if (!loading) {
       const filterResults = data.filter((item) => {
-        item.name.toLowerCase().includes(search.toLowerCase());
+        return item.name.toLowerCase().includes(search.toLowerCase());
       });
       setFiltered(filterResults);
     }
@@ -40,6 +41,8 @@ export default function DataProvider({ children }: ChildrenType) {
   );
 }
 
-export function useData(){
-    return useContext(DataContext);
+export function useData() {
+  const context = useContext(DataContext);
+  if (!context) throw new Error("useData deve ser usado dentro de DataProvider");
+  return context;
 }

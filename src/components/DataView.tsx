@@ -20,4 +20,18 @@ export default function DataView(){
             </div>
         )
     }
+    return(
+        <div className="flex flex-col">
+            {loading && <p>Carregando...</p>}
+                {filtered.length > 0 &&(
+                    filtered.map((e)=>(
+                        <div className="bg-blue-100 rounded-sm mt-2 text-center" key={e.id}>
+                            <img src={e.image} alt="imagem pokemon" className="w-30 h-50 rounded-sm ml-5 sm:ml-30" />
+                            <strong>Nome: {e.name}</strong>
+                            <p>Id: {e.id}</p>
+                        </div>
+                    ))
+                )}
+        </div>
+    )
 }

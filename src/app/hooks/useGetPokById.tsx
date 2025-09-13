@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { EspecificPokemon } from "../types/useEspcificPokemon";
+import { PokemonType } from "../types/useEspcificPokemon";
 export default function GetPokById(id: number) {
   const [data, setData] = useState<EspecificPokemon | null>(null);
   const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ export default function GetPokById(id: number) {
           id: data.id,
           name: data.name,
           image: data.sprites.front_default,
-          types: data.types.map((t: any) => t.type.name),
+          types: (data.types as PokemonType[]).map(t => t.type.name),
           weight: data.weight,
           baseExperience: data.base_experience,
         };

@@ -1,10 +1,10 @@
-import { usePokemonType } from "./pokemonType";
+import { useGeralPokemonType } from "./pokemonType";
 
 export type DataContextType ={
-    data: usePokemonType[];
+    data: useGeralPokemonType[];
   loading: boolean;
-  filtered: usePokemonType[];
-  setFiltered: React.Dispatch<React.SetStateAction<usePokemonType[]>>;
+  filtered: useGeralPokemonType[];
+  setFiltered: React.Dispatch<React.SetStateAction<useGeralPokemonType[]>>;
   viewMode: string;
   setViewMode: React.Dispatch<React.SetStateAction<string>>;
   search: string;

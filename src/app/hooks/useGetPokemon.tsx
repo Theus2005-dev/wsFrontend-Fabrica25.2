@@ -11,7 +11,7 @@ export default function useGetPokemons() {
       try {
         const response = await fetch("https://pokeapi.co/api/v2/pokemon");
         const data = await response.json();
-        const pokemonInfo = data.results.map((pokemon: any, index: number) => {
+        const pokemonInfo = data.results.map((pokemon: useGeralPokemonType, index: number) => {
           const PokemonId = pokemon.url.split("/").filter(Boolean).pop();
           return {
             id: Number(PokemonId),

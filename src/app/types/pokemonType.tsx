@@ -1,5 +1,6 @@
 export type usePokemonType ={
     name: string,
     url: string,
-    img: string
+    image: string,
+    id: number
 }

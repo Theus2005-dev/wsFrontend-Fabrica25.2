@@ -17,11 +17,7 @@ export default function PokemonPage({
   
     return (
       <main className=" relative flex  bg-whiteitems-center justify-center">
-        <div className="absolute top-4 flex right-4 gap-3">
-          <GridIcon />
-          <Listicon />
-        </div>
-        {loading && <p>Carregando...</p>}
+               {loading && <p>Carregando...</p>}
         <div className="bg-blue-400 rounded-sm mt-2 text-center" key={data?.id}>
           <img
             src={data?.image}

@@ -24,6 +24,7 @@ export default function DataView() {
 
                 <strong>Nome: {e.name.toUpperCase()}</strong>
                 <p>Id: {e.id}</p>
+                <Link href={`pokemon/${e.id}`}><p>Saiba mais</p></Link>
                
               </div>
             );

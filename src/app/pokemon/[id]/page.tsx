@@ -14,7 +14,7 @@ export default function PokemonPage({
   const { viewMode } = useData();
   console.log(data);
   console.log(viewMode);
-  if (viewMode === "grid") {
+  
     return (
       <main className=" relative flex  bg-whiteitems-center justify-center">
         <div className="absolute top-4 flex right-4 gap-3">
@@ -37,5 +37,4 @@ export default function PokemonPage({
         </div>
       </main>
     );
-  }
 }

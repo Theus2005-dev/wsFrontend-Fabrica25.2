@@ -4,6 +4,7 @@ import "./globals.css";
 import DataProvider from "@/context/dataContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,17 +31,14 @@ export default function RootLayout({
         className={` flex flex-col min-h-scree ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <DataProvider>
-          
+       
             <Header />
 
             {/* Main cresce para preencher o espaço */}
-            <main className="flex-1">
-              {children}
-            </main>
-          <footer className="mt-60">
-            <Footer />
-          </footer>
-            
+            <main className="flex-1">{children}</main>
+            <footer className="mt-60">
+              <Footer />
+            </footer>
          
         </DataProvider>
       </body>

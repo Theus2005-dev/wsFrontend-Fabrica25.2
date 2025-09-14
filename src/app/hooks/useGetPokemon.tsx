@@ -9,7 +9,7 @@ export default function useGetPokemons() {
   useEffect(() => {
     async function getData() {
       try {
-        const response = await fetch("https://pokeapi.co/api/v2/pokemon");
+        const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
         const data = await response.json();
         const pokemonInfo = data.results.map((pokemon: useGeralPokemonType, index: number) => {
           const PokemonId = pokemon.url.split("/").filter(Boolean).pop();

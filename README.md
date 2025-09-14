@@ -59,4 +59,6 @@ eslint.config.mjs: Configurações do ESLint.
 postcss.config.mjs: Configurações do PostCSS.
 
 next.config.ts: Configurações adicionais do Next.js.
-Link do projeto: https://ws-frontend-fabrica25-2-dnf6.vercel.app/
+
+
+#Link Do projeto no vercel: https://ws-frontend-fabrica25-2-dnf6.vercel.app/

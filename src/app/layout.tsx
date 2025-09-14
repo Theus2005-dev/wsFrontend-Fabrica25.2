@@ -30,16 +30,18 @@ export default function RootLayout({
         className={` flex flex-col min-h-scree ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <DataProvider>
-          <div className="flex flex-col flex-1">
+          
             <Header />
 
             {/* Main cresce para preencher o espaço */}
             <main className="flex-1">
               {children}
             </main>
-
+          <footer className="mt-60">
             <Footer />
-          </div>
+          </footer>
+            
+         
         </DataProvider>
       </body>
     </html>
